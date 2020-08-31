@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Market</title>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width=device-width initial-scale=1 shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <script src="script.js"></script>
+	<nav class="top">
+    <a href="" class="fa fa-shopping-cart" style="font-size:36px"></a>
+		<a href="#"><button class="Login" onclick="openloginform()">Login</button></a>
+    <div class="login-popup" id="mylogin">
+      <form class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email"      name="email" required>
+
+        <label for="pwd"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeloginform()">Cancle</button>
+      </form>
+    </div>
+		<a href="#"><button class="signup" onclick="opensignupform()">Sign Up</button></a>
+    <div class="signup-popup" id="mysignup">
+      <form class="form-container">
+        <h1>Sign Up</h1>
+        
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name"      name="name" required>
+
+        <label for="mobile"><b>Mobile</b></label>
+        <input type="text" placeholder="Enter Mobile No"      name="mobile" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email"      name="email" required>
+
+        <label for="pwd"><b>New Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="pwd"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Create Account</button>
+        <button type="button" class="btn cancel" onclick="closesignupform()">Cancle</button>
+      </form>
+    </div>
+
+
+    <a href=" "<form class="example" >
+    <input type="text" placeholder="Search" name="search">
+    <button type="submit"><i class="fa fa-search"></i></button></a>
+    </form>
+	</nav>
+	<nav class="menu">
+		<a href="contactUs.html"> Contact Us</a>
+    <a href="about.html"> About</a>
+    <a href="#"> Kids</a>
+    <a href="women.html"> Women</a>
+    <a href="men.html"> Men</a>
+    <a href="index.html"> Home</a>
+	</nav>
+  <div class="items">
+    <div class="inner">
+      <img src="images/kids/kids1.jpeg" 
+        <p>
+          <br>
+          XBOYZ <br>
+          Boys Festive & Party Kurta and <br>Pyjama Set  (Dark Blue Pack of 1)<br>
+          <h3>₹996</h3>
+        </p>
+      <a class="addtocart" onclick="addedcart(1)"</a>
+      <p><button>Add to Cart</button> </p>
+    </div>
+
+    <div class="inner">
+      <img src="images/kids/kids2.jpeg"
+        <p>
+          <br>
+          Tripr <br>
+          Boys Printed Pure Cotton T <br>Shirt  (Black, Pack of 1)<br>
+          <h3>₹380</h3> <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+        <p><button>Add to Cart</button> </p>
+        <a class="addtocart" onclick="addedcart(1)"</a>
+    </div>
+    
+    <div class="inner">
+      <img src="images/kids/kids3.jpeg"
+        <p>
+          <br>
+          N BAHUBALI <br>
+          Minnie Girls Midi/Knee Length <br>Casual Dress  (Blue, Sleeveless)<br>
+          <h3>₹256</h3> <br>
+          <br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br>
+        </p>
+        <p><button>Add to Cart</button> </p>
+        <a class="addtocart" onclick="addedcart(1)"</a>
+    </div>
+
+    <div class="inner">
+      <img src="images/kids/kids4.jpeg"
+        <p>
+          <br>
+          BAHUBALI <br>
+          Minnie Girls Midi/Knee Length <br>Casual Dress  (Multicolor, Sleeveless)<br>
+          <h3>₹199</h3><br>
+          <br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br><br>
+        </p>
+        <p><button>Add to Cart</button> </p>
+        <a class="addtocart" onclick="addedcart(1)"</a>
+    </div>
+
+    <div class="inner">
+      <img src="images/kids/kids5.jpeg"
+        <p>
+          <br>
+          SmartRAHO <br>
+          Barbie Girls Midi/Knee Length <br>Casual Dress  (Multicolor, Sleeveless)<br>
+          <h3>₹245</h3> 
+        </p>
+        <p><button>Add to Cart</button> </p>
+        <a class="addtocart" onclick="addedcart(1)"</a>
+    </div>
+  </div>
+</body>

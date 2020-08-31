@@ -1,0 +1,374 @@
+body{
+	margin: 0px auto;
+  width: 100%;
+}
+.top{
+	background-color: #a2d5f2;
+	width: 100%;
+	height: 70px;
+  position: relative;
+}
+.top a:hover ,.menu a:hover {
+  opacity: 0.7;
+}
+.top a,.menu a{
+	padding-right: 20px;
+	float: right;
+	font-size: 30px;
+	text-decoration: none;
+}
+.top a button {
+  padding: 7px 20px;
+  color: white;
+  background-color: #ffc93c;
+  border: none;
+}
+.menu{
+	background-color: white;
+	width: 100%;
+	height: 50px;
+  position: relative;
+}
+.slider{
+  /*max-width: 1000px;*/
+  position: relative;
+  margin: auto;
+}
+.img{
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.brands h1 ,.categ h1{
+  text-align: center;
+}
+.brands .inner {
+  text-align: center;
+}
+.brands .inner a {
+  padding: 38px;
+  float: left;
+  /*text-align: center;*/
+}
+.brands .inner a img ,.categ .inner a img{
+  float: left;
+  width: 300px;
+  height: auto;
+  /*text-align: center;*/
+}
+.categ .inner a {
+  padding: 100px;
+  float: left;
+  text-decoration: none;
+  font-style: italic;
+  color: black;
+}
+.categ .inner {
+  text-align: center;
+  /*display: block;
+  margin-left: auto;
+  margin-right: auto;*/
+  width: 100%;
+}
+.categ {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  /*padding-top: 10px;
+  padding-bottom: 10px;*/
+  display: block;
+  background-color: #a2d5f2; 
+  text-align: center;
+  height: 50px;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  /*cursor: pointer;*/
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Login Popup*/
+.top .login-popup ,.top .signup-popup {
+  display: none;
+  position: fixed;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.top .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.top .form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.top .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.top .form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.top .form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.top .form-container .btn:hover {
+  opacity: 1;
+}
+
+/*for men.html*/
+.items .inner img{
+  width: 300px;
+  height: auto;
+}
+.items .inner img p{
+  font-size: 16px;
+}
+.items .inner{
+  float: left;
+  padding: 38px;
+}
+.items .inner p button, .query {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color:white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.items .inner p button:hover {
+  opacity: 0.7;
+}
+
+//Query form in contact us page//
+.query {
+  border: none;
+  outline: 0;
+  padding: 15px 32px;
+  color:white;
+  background-color: #000;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  width: 50%;
+}
+.query-popup {
+  text-align: center;
+  display: none;
+  position: fixed;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.queryform-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.queryform-container input[type=text],.queryform-container input[type=number]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.queryform-container input[type=text]:focus, .queryform-container input[type=number] {
+  background-color: #ddd;
+  outline: none;
+}
+.queryform-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.queryform-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.queryform-container .btn:hover {
+  opacity: 1;
+}
+
+/*contact logos*/
+.contacts{
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.contacts .inner {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 150px;
+}
+.fa{
+	 padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-github{
+	background: black;
+	color: white;
+}
+.fa-linkedin{
+	background: #0e76a8;
+	 color: white;
+}
+.fa-google{
+	background-color: #dd4b39;
+	color: white; 
+}
+.fa-whatsapp{
+	background-color: #25d366;
+	color: white;
+}
+.fa-mobile{
+	background-color: #3B5998;
+	color: white;
+}
+.fa-instagram{
+	background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+color: white;
+}
